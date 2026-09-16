@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+description: Coding conventions
+globs: **/*
+---
+
+# Coding conventions
+
+## General
+
+- Prefer small, focused changes tied to a single GitHub Issue.
+- Match existing patterns in the repository before introducing new ones.
+- Document non-obvious behavior in `docs/` when it affects how others work.
+
+## Language
+
+- Documentation and PR text: Japanese (team default for this template).
+- Code comments and identifiers: English.
+
+## Quality
+
+- Run project lint/test commands when they exist; otherwise note "skipped (no toolchain yet)" in the PR.
+- Do not commit secrets, tokens, or personal credentials.

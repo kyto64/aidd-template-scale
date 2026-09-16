@@ -1,0 +1,12 @@
+.env*
+!.env.example
+node_modules/
+.pnpm-store/
+dist/
+coverage/
+.coverage
+htmlcov/
+.DS_Store
+*.log
+.vscode/settings.json
+.cursor/plans/

@@ -1,0 +1,62 @@
+---
+root: true
+targets:
+  - '*'
+globs:
+  - '**/*'
+---
+<!--
+  SSOT: Edit .rulesync/rules/ and run `rulesync generate`.
+  Generated: CLAUDE.md, AGENTS.md, .claude/, .cursor/rules/, .codex/memories/, .agents/skills/, .mcp.json
+-->
+# Project overview
+
+AI-driven development template (lean). Replace placeholders with your project details.
+
+## Tech stack (placeholder)
+
+- Application: (fill in after adopting this template)
+- CI/CD: GitHub Actions
+- Issue tracking: GitHub Issues + `gh`
+
+## Documentation (SSOT)
+
+Markdown under `docs/` is the Single Source of Truth for specifications. When docs and code disagree, code wins unless you explicitly update docs in the same PR.
+
+- [docs/_inventory.md](./docs/_inventory.md) — inventory and SSOT boundaries
+- [docs/product/index.md](./docs/product/index.md) — product
+- [docs/architecture/index.md](./docs/architecture/index.md) — architecture
+- [docs/operations/index.md](./docs/operations/index.md) — operations
+- [docs/development/index.md](./docs/development/index.md) — development
+
+See [README.md](./README.md) for adoption checklist.
+
+## Development workflow
+
+Ticket-driven development using GitHub Issues. Setup: [docs/development/ticket-driven-setup.md](./docs/development/ticket-driven-setup.md).
+
+Skills (`.claude/skills/`):
+
+- `/start-ticket <issue-number>` — start issue, plan, implement, open PR
+- `/address-pr-feedback <pr-number>` — address review feedback
+- `/close-ticket <issue-number>` — post-merge docs update
+- `/spec-lookup` — answer from `docs/` (code when needed)
+
+### Cursor
+
+- Skills: `.claude/skills/` (Cursor reads them as Agent Skills)
+- Project rules: `.rulesync/rules/` → `rulesync generate` → `.cursor/rules/`
+
+### Codex CLI
+
+- Rules: `.codex/memories/` (generated)
+- Skills: `.agents/skills/` (generated)
+
+## AI settings changes
+
+Edit `.rulesync/` only, then `rulesync generate` and commit generated files. Do not edit generated files directly.
+
+## Language
+
+- User-facing docs and PR descriptions: Japanese (unless your team chooses otherwise)
+- Code comments: English

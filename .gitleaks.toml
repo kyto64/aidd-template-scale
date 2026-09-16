@@ -1,0 +1,8 @@
+title = "AIDD Gitleaks"
+[extend]
+useDefault = true
+
+[allowlist]
+paths = [
+  '''^\.git/''',
+]
