@@ -1,0 +1,9 @@
+min_version: 1.6.0
+pre-commit:
+  commands:
+    gitleaks:
+      glob: "*"
+      run: gitleaks protect --staged --verbose --redact
+    proprietary-check:
+      glob: "*"
+      run: bash scripts/check-no-proprietary-leaks.sh
