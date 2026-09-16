@@ -1,3 +1,4 @@
+# Opt-in: rename to .github/dependabot.yml to enable Dependabot version updates.
 version: 2
 updates:
   - package-ecosystem: github-actions

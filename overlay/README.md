@@ -1,6 +1,6 @@
 # aidd-template-scale
 
-**AI-driven development** template (scale): everything in **lean**, plus VitePress docs site, UI/E2E skills, lefthook, gitleaks, and Dependabot.
+**AI-driven development** template (scale): everything in **lean**, plus VitePress docs site, UI/E2E skills, lefthook, gitleaks, and optional Dependabot config.
 
 Still **no application code** — configure [stack-paths.md](./docs/development/stack-paths.md) after you add a UI.
 
@@ -18,7 +18,7 @@ Still **no application code** — configure [stack-paths.md](./docs/development/
 | UI skills (`spec-to-screen`, etc.) | no | yes (gated by stack-paths) |
 | `agentic-e2e` (Linux/WSL) | no | yes |
 | lefthook + gitleaks pre-commit | no | yes |
-| Dependabot | no | yes |
+| Dependabot (opt-in) | no | example provided |
 
 ## Overlay maintenance
 
@@ -37,6 +37,7 @@ See `LEAN_REF` for the lean commit used in the last assemble.
 - [ ] `cd docs-site && pnpm install && pnpm build`
 - [ ] Install lefthook: `lefthook install` (optional locally)
 - [ ] Replace `PROJECT_NAME` placeholders
+- [ ] Optional: rename `.github/dependabot.yml.example` to `.github/dependabot.yml` to enable Dependabot
 
 ## Tools (pinned)
 
